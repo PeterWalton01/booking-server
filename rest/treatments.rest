@@ -1,1 +1,4 @@
-GET http://localhost:4000/treatments
+#@url_base = http://localhost:4000
+@url_base = https://booking-server-mw38.onrender.com
+
+GET {{url_base}}/treatments

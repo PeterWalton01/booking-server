@@ -1,22 +1,26 @@
-GET http://localhost:4000/appointments
+#@url_base = http://localhost:4000
+@url_base = https://booking-server-mw38.onrender.com
+
+
+GET {{url_base}}/appointments
 
 ###
-GET http://localhost:4000/appointments/fromdate/2023-02-07
+GET {{url_base}}/appointments/fromdate/2023-02-07
 
 ###
-GET http://localhost:4000/appointments/client/Rick Black
+GET {{url_base}}/appointments/client/Rick Black
 
 ###
-GET http://localhost:4000/appointments/client/Rick Black/fromdate/2023-02-07
+GET {{url_base}}/appointments/client/Rick Black/fromdate/2023-02-07
 
 ###
-GET http://localhost:4000/appointments/physio/Kath Wilson
+GET {{url_base}}/appointments/physio/Kath Wilson
 
 ###
-GET http://localhost:4000/appointments/physio/Kath Wilson/fromdate/2023-02-07
+GET {{url_base}}/appointments/physio/Kath Wilson/fromdate/2023-02-07
 
 ###
-POST http://localhost:4000/appointments
+POST {{url_base}}/appointments
 content-type: application/json
 
 {
@@ -30,7 +34,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:4000/appointments/9
+PUT {{url_base}}/appointments/9
 content-type: application/json
 
 {
@@ -44,5 +48,5 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:4000/appointments/124
+DELETE {{url_base}}/appointments/124
 
