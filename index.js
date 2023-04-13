@@ -26,7 +26,7 @@ const bodyParser = require("body-parser");
 // //app.use(cors({ origin: true, credentials: true }));
 // // prettier-ignore
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://booking-server-mw38.onrender.com"],
+  origin: ["http://localhost:3000", "https://bookings-client.netlify.app"],
   credentials: true,
   methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
 };
